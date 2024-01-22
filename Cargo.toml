@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "abc336"
+]
+resolver = "2"
+
+[profile.release]
+lto = true
+panic = 'abort'
