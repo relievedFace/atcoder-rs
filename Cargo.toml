@@ -4,7 +4,7 @@ members = [
   "abc202",
   "abc336",
   "abc337",
-  "abc339",
+  "abc339", "abc345",
 ]
 resolver = "2"
 
