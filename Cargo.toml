@@ -8,8 +8,10 @@ members = [
   "abc339",
   "abc340",
   "abc341",
+  "abc342",
   "abc345",
   "abc351",
+  "abc352",
   "abc353",
 ]
 resolver = "2"
