@@ -11,13 +11,10 @@ fn main() {
         r: usize
     }
 
-    let vec_n: Vec<_> = (1..=n).collect();
-    let left: Vec<_> = vec_n[..l - 1].to_vec();
-    let mid: Vec<_> = vec_n[l - 1..r].iter().rev().collect();
-    let right: Vec<_> = vec_n[r..].to_vec();
-    let mut ans = left.clone();
-    ans.extend(mid);
-    ans.extend(right);
+    let mut ans: Vec<_> = (1..=n).collect();
+
+    ans[l - 1..r].reverse();
+
     let ans = ans.iter().join(" ");
 
     println!("{}", ans);
