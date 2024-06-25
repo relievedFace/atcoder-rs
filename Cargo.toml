@@ -29,3 +29,5 @@ resolver = "2"
 [profile.release]
 lto = true
 panic = 'abort'
+
+rust-version = "1.70.0"
