@@ -37,10 +37,8 @@ fn main() {
 
     for bit in 0..1 << n {
         let mut p = vec![false; n];
-        for i in 0..n {
-            if bit & 1 << i > 0 {
-                p[i] = true;
-            }
+        for (i, p_i) in p.iter_mut().enumerate() {
+            *p_i = (bit & (1 << i)) != 0;
         }
 
         let mut flag = true;
