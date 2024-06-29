@@ -21,6 +21,7 @@ members = [
   "abc352",
   "abc353",
   "abc354",
+  "abc355",
   "abc356",
   "abc359",
 ]
@@ -29,5 +30,3 @@ resolver = "2"
 [profile.release]
 lto = true
 panic = 'abort'
-
-rust-version = "1.70.0"
