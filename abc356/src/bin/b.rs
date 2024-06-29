@@ -13,9 +13,9 @@ fn main() {
 
     let mut sum = vec![0; m];
 
-    for i in 0..m {
-        for j in 0..n {
-            sum[i] += x[j][i];
+    for (x_i, sum_i) in x.iter().zip(sum.iter_mut()) {
+        for x_ij in x_i.iter() {
+            *sum_i += x_ij;
         }
     }
 
