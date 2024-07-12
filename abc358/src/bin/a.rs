@@ -4,5 +4,16 @@
 use proconio::input;
 
 fn main() {
-    input! {}
+    input! {
+        s: String,
+        t: String,
+    }
+
+    let ans = if s == "AtCoder" && t == "Land" {
+        "Yes"
+    } else {
+        "No"
+    };
+
+    println!("{}", ans);
 }
