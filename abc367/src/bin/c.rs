@@ -15,7 +15,7 @@ fn main() {
     make_pattern(n, k, &r, 0, vec![], &mut ans);
     ans.sort();
 
-    let ans = ans.iter().map(|l| l.iter().join(" ")).join("¥n");
+    let ans = ans.iter().map(|l| l.iter().join(" ")).join("\n");
 
     println!("{}", ans);
 }
